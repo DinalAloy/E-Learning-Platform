@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="dashboard.css">
     <title>E-Class || Profile</title>
 </head>
+<?php
+$students = array("19BCE0622", "19BCE0651", "19BCE0669", "18BCE2180");
+echo "I like " . $students[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+?>
 <body>
     <nav>
         <h1><a href="/">E-class</a></h1>
@@ -30,18 +34,11 @@
         <div class="dashboard activeNav">
             <h1>Faculties</h1>
             <div class="cardList">
-                    <a class="card">
-                        <div class="logo">    
-                            <img width="100" height="100" src="https://formbharo.com/wp-content/uploads/2021/04/vit.png">
-                        </div>
-                        19BCE0622
-                    </a>
-                    <a class="card">
-                        <div class="logo">    
-                            <img width="100" height="100" src="https://formbharo.com/wp-content/uploads/2021/04/vit.png">
-                        </div>
-                        19BCE0622
-                    </a>
+                <?php
+                    for($i=0;$i<count($students);$i++){
+                        echo "<a class='card'><div class='logo'><img width='100' height='100' src='https://formbharo.com/wp-content/uploads/2021/04/vit.png'></div>".$students[$i]."</a>";                    
+                    }
+                ?>
                 <a class="add" href="{% url 'addFaculty' %}">
                     Add Faculty
                 </a>
