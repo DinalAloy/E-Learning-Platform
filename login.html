@@ -21,14 +21,14 @@
         <div class="wrapper">
             <div class="container">
                 <h1>Login</h1>
-                
-                <form class="form">
-                    <input type="email" placeholder="Username" id="email">
-                    <input type="password" placeholder="Password" id="password">
+
+                <form class="form" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <input type="email" placeholder="Username" id="email" name="email">
+                    <input type="password" placeholder="Password" id="password" name="password">
                     <button type="submit" id="login-button">Login</button>
                 </form>
             </div>
-            
+
             <ul class="bg-bubbles">
                 <li></li>
                 <li></li>
@@ -44,6 +44,6 @@
         </div>
         <script src="login.js"></script>
     <!-- <h1>Ready to Grow?</h1> -->
-</div>    
+</div>
 </body>
 </html>

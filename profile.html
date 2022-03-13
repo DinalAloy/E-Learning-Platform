@@ -29,7 +29,7 @@
         </div>
         <div class="dashboard activeNav">
             <img src="https://formbharo.com/wp-content/uploads/2021/04/vit.png">
-            <form method = "POST" autocomplete="off" enctype="multipart/form-data">
+            <form method = "POST" autocomplete="off" enctype="multipart/form-data" name="profile_form">
                 <div class="field">
                     Name
                     <input name="name" type = "text" placeholder="name">
@@ -42,9 +42,10 @@
                     number
                     <input name="number" type = "text" placeholder="number">
                 </div>
-                <button>Save</button>
+                <button onclick="Isvalid()">Save</button>
             </form>
         </div>
-    </div>    
+    </div>
+<script src="profile.js"></script>
 </body>
 </html>

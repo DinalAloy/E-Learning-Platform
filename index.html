@@ -19,15 +19,26 @@
     </nav>
     <div class="container">
     <div class="land">
-        <div class="text">Bringing the Campus you love home. <br>
+        <div id="text" onmouseover="change()" onmouseout="changeBack()">Bringing the Campus you love home. <br>
             E-Learning at it's best. <br>
             <a href="login.html">Join Now</a>
         </div>
         <div class="svg">
-            <img src="laptop.svg">        
+            <img src="laptop.svg">
         </div>
     </div>
     <!-- <h1>Ready to Grow?</h1> -->
-</div>    
+
+</div>
+<script>
+function change(){
+  document.getElementById("text").innerHTML = "First time user? Register Below.";
+}
+function changeBack(){
+  document.getElementById("text").innerHTML = "Bringing the Campus you love home." <br>
+      "E-Learning at it's best.";
+}
+
+</script>
 </body>
 </html>
